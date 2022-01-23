@@ -1,3 +1,107 @@
+/* * {
+  box-sizing: border-box;
+} */
+
+body {
+  width: 100vw;
+  height: 100vh;
+  color: white;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+main {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  z-index: 10;
+}
+
+.layout__center {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h2#clock {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+form > input#login {
+  width: 10rem;
+  padding: 0.25rem 0.5rem;
+  border: 0px 0px 1px 0px black;
+  background: none;
+}
+
+form > input#todo {
+  margin: 1rem 0px;
+  width: 20rem;
+  padding: 0.25rem 0.5rem;
+  border: 0px 0px 1px 0px black;
+  background: none;
+}
+
+input::placeholder {
+  text-align: center;
+  font-style: italic;
+}
+
+form > button {
+  margin: 1rem 0px;
+  border: 0px 0px 1px 0px black;
+  padding: 0.25rem 0.5rem;
+  background: none;
+}
+
+#todo-list > li {
+  /* position: absolute;
+  right: 0; */
+
+  text-align: center;
+}
+#todo-list > li > button {
+  border: none;
+  background: none;
+}
+
+h1#greeting {
+  font-size: 3.5rem;
+  font-weight: 600;
+}
+
+.layout__bottom {
+  margin-bottom: 2rem;
+  text-align: center;
+  align-self: center;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+.cover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+}
+
 .hidden {
-    display: none;
+  display: none;
 }

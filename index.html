@@ -13,27 +13,39 @@
   </head>
 
   <body>
-    <form id="login-form" class="hidden">
-      <input type="text" placeholder="What is your name" />
-      <button>Log In</button>
-    </form>
-    <h2 id="clock">00:00:00</h2>
-    <h1 id="greeting" class="hidden"></h1>
+    <div class="cover"></div>
 
-    <form id="todo-form">
-      <input type="text" placeholder="Write a To Do and Press Enter" required />
-    </form>
-    <ul id="todo-list"></ul>
+    <main>
+      <div class="layout__center">
+        <h2 id="clock">00:00:00</h2>
+        <form id="login-form" class="hidden">
+          <input id="login" type="text" placeholder="What is your name" />
+          <button>Log In</button>
+        </form>
+        <h1 id="greeting" class="hidden"></h1>
 
-    <div id="quote">
-      <span></span>
-      <span></span>
-    </div>
+        <form id="todo-form">
+          <input
+            id="todo"
+            type="text"
+            placeholder="Write a To Do and Press Enter"
+            required
+          />
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
 
-    <div id="weather">
-      <span></span>
-      <span></span>
-    </div>
+      <div class="layout__bottom">
+        <div id="weather">
+          <span></span>
+          <span></span>
+        </div>
+        <div id="quote">
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </main>
 
     <script src="./js/greeting.js"></script>
     <script src="./js/clock.js"></script>
