@@ -19,7 +19,12 @@
       <div class="layout__center">
         <h2 id="clock">00:00:00</h2>
         <form id="login-form" class="hidden">
-          <input id="login" type="text" placeholder="What is your name" />
+          <input
+            id="login"
+            type="text"
+            placeholder="What is your name"
+            autocomplete="off"
+          />
           <button>Log In</button>
         </form>
         <h1 id="greeting" class="hidden"></h1>
@@ -30,6 +35,7 @@
               id="todo"
               type="text"
               placeholder="Write a To Do and Press Enter"
+              autocomplete="off"
               required
             />
           </form>
