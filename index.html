@@ -14,9 +14,8 @@
 
   <body>
     <div class="cover"></div>
-
-    <main>
-      <div class="layout__center">
+    <section class="layout">
+      <header class="layout__center">
         <h2 id="clock">00:00:00</h2>
         <form id="login-form" class="hidden">
           <input
@@ -28,32 +27,36 @@
           <button>Log In</button>
         </form>
         <h1 id="greeting" class="hidden"></h1>
+        <form id="todo-form" class="hidden">
+          <input
+            id="todo"
+            type="text"
+            placeholder="Write a To Do and Press Enter"
+            autocomplete="off"
+            required
+          />
+        </form>
+      </header>
 
-        <section id="sectionTodo" class="hidden">
-          <form id="todo-form">
-            <input
-              id="todo"
-              type="text"
-              placeholder="Write a To Do and Press Enter"
-              autocomplete="off"
-              required
-            />
-          </form>
+      <main>
+        <div id="sectionTodo" class="hidden">
           <ul id="todo-list"></ul>
-        </section>
-      </div>
+        </div>
+      </main>
 
-      <div class="layout__bottom">
-        <div id="weather">
-          <span></span>
-          <span></span>
+      <footer>
+        <div class="layout__bottom layout__center">
+          <div id="weather">
+            <span></span>
+            <span></span>
+          </div>
+          <div id="quote">
+            <span></span>
+            <span></span>
+          </div>
         </div>
-        <div id="quote">
-          <span></span>
-          <span></span>
-        </div>
-      </div>
-    </main>
+      </footer>
+    </section>
 
     <script src="./js/greeting.js"></script>
     <script src="./js/clock.js"></script>

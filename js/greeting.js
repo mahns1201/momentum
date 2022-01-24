@@ -1,4 +1,5 @@
 const sectionTodo = document.querySelector("#sectionTodo");
+const todoForm = document.querySelector("#todo-form");
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
 const greeting = document.querySelector("#greeting");
@@ -13,6 +14,7 @@ function onLoginSubmit(event) {
   localStorage.setItem(USERNAME_KEY, username);
   paintGreeting(username);
   loginForm.classList.add(HIDDEN_CLASS);
+  todoForm.classList.remove(HIDDEN_CLASS);
 }
 
 function paintGreeting(username) {
