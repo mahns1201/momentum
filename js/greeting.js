@@ -27,6 +27,7 @@ const savedUsername = localStorage.getItem(USERNAME_KEY);
 
 if (savedUsername) {
   // greetings
+  todoForm.classList.remove(HIDDEN_CLASS);
   paintGreeting(savedUsername);
 } else {
   // loginForm
