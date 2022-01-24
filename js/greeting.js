@@ -1,4 +1,4 @@
-const sectionTodo = document.querySelector("#sectionTodo");
+const sectionTodo = document.querySelector("#section-todo");
 const todoForm = document.querySelector("#todo-form");
 const loginForm = document.querySelector("#login-form");
 const loginInput = document.querySelector("#login-form input");
