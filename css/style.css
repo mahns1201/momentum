@@ -40,9 +40,11 @@ h1#greeting {
 }
 
 main {
+  width: 50%;
   height: 100%;
   justify-self: start;
   margin-bottom: 1rem;
+  overflow-y: scroll;
 }
 #todo-list > li {
   text-align: center;
@@ -51,6 +53,14 @@ main {
   cursor: pointer;
   border: none;
   background: none;
+}
+/* scrollbar style */
+main::-webkit-scrollbar {
+  display: none;
+}
+main {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 img {
