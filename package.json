@@ -1,0 +1,28 @@
+{
+  "name": "momentum",
+  "version": "1.0.0",
+  "description": "momentum clone coding with vanilla js",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "@babel/core": "^7.16.12",
+    "@babel/register": "^7.16.9",
+    "@babel/preset-env": "^7.16.11"
+  },
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mahns1201/momentum.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mahns1201/momentum/issues"
+  },
+  "homepage": "https://github.com/mahns1201/momentum#readme"
+}
